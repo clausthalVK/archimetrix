@@ -4,6 +4,9 @@
 
 = Download and installation =
 
+The Store Example is available as a zip file from the [http://code.google.com/p/archimetrix/downloads/list download page].
+
+In order to import the example into your workspace, select _File -> Import_ and choose _General -> Archive File_. Then select the zip file that you downloaded, choose a project into which the example should be extracted and click _Finish_.
 
 
-= Structure =
+= Overview of the example =
