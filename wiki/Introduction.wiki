@@ -3,7 +3,7 @@
 
 Archimetrix is a tool-supported reengineering process that combines different reverse engineering approaches to enable an iterative recovery and reengineering of component-based software architectures. It is developed by the [http://www.hni.uni-paderborn.de/swt/ Software Engineering Group at the University of Paderborn].
 
-<wiki:toc max_depth="1" />
+<wiki:toc max_depth="2" />
 
 == Overview ==
 
