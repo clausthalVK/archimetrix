@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Front Page.
 
 = Archimetrix - Iterative Architecture Recovery and Reengineering =
 
