@@ -10,3 +10,5 @@ In order to import the example into your workspace, select _File -> Import_ and 
 
 
 = Overview of the example =
+
+http://code.google.com/p/archimetrix/source/browse/wiki/images/StoreExampleArchitecture.png
