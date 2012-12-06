@@ -1,0 +1,5 @@
+#summary Sidebar for the Archimetrix wiki pages
+
+ * [Introduction] 
+ * [UserGuide User Guide]
+ * [StoreExample Store Example]
