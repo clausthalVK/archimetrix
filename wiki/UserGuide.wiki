@@ -10,14 +10,24 @@ You can also have a look at the [Screencast Archimetrix Screencast].
 The user guide explains the typical Archimetrix workflow by means of the [StoreExample Store Example].
 The session follows the Archimetrix process and illustrates the steps with snapshots from the tool.
 
-== Architecture Reconstruction == 
+== 1. Architecture Reconstruction == 
 
-=== Parse the source code  ===
+=== a. Parse the source code  ===
 First, the source code of the system under analysis has to be parsed.
 As described above, Archimetrix uses SISSy for this task.
 SISSy is able to parse Java, C++, and Delphi code and creates an instance of the GAST meta model from it.
 
-=== Reconstruct the software architecture ===
+SISSy can be started by selecting _Archimetrix -> Extract GAST_ from the menu bar.
+This will bring up the _Run Cofigurations_ dialog.
+In this dialog, select _Launch SISSy_ and click on _New launch configuration_.
+
+Before the GAST can be extracted, several properties have to be configured.
+ * On the first configuration page, you have to specify where SISSy can find the source code of the system. For this add the source folder of the system to the _Input Paths_, either by clicking on _File System..._ or _Workspace..._. In case of the Store Example, the source code lies in the folder `StoreExample/src`.
+ * Next, go to the _Database Settings_ page. SISSy puts all the parsed information into a database before creating the GAST from it. If you have no dedicated database available, select _DERBY_ as the database driver. You also have to specify the _Derby DB Filesystem Base-Path_ where the database information can be stored.
+ * Finally, you have to tell SISSy what to do with the GAST. go to the _GAST Output_ page. Tick the _Write GAST output file_ check box. Then specify the path where the GAST file should be saved.
+ * Start the GAST extraction by clicking on _Run_. 
+
+=== b. Reconstruct the software architecture ===
 In this step, the GAST is the input for the initial architecture reconstruction step.
 The architecture reconstruction is accomplished by SoMoX.
 Before the reconstruction is started, SoMoX has to be configured.
@@ -47,7 +57,7 @@ In this diagram, the interface operations and data types are omitted.
 Instead, the connectors between the components are shown.
 The reconstructed components are contained in one large component called `SoMoX Reverse Engineered System` representing the system boundary.
 
-=== 3. Execute relevance analysis ===
+== 2. Execute relevance analysis ==
 
 After the architecture reconstruction, the component relevance analysis is executed.
 The results of this analysis are shown in a specialised tabular overview (Figure~\ref{fig:RelevantComponentsView}).
@@ -67,7 +77,7 @@ These are the values of the single relevance metrics (Closeness To Threshold, Co
 The last column indicates if the relevance value of the component is Pareto optimal with respect to the other components.
 Pareto optimal (i.e.\ very relevant) components are also highlighted in yellow.
 
-=== 4. Execute deficiency detection === 
+== 3. Execute deficiency detection == 
 Before the detection of deficiencies is started, the deficiencies have to be formalised.
 The editor for deficiency formalisations is shown in Figure~\ref{fig:ExamplePatternSpec}.
 It shows a formalisation of the \emph{Interface Violation} deficiency (see Appendix~\ref{app:InterfaceViolation}).
@@ -114,7 +124,7 @@ It shows the section of the host graph which is involved in this deficiency occu
 It is layouted similar to the deficiency formalisation (cf.\ Figure~\ref{fig:ExamplePatternSpec}) in order to facilitate its interpretation by the software architect.
 In addition, it also shows selected attribute values of the elements from the host graph, e.g.\ the names of the objects.
 
-=== 5. Identify critical deficiencies ===
+== 4. Identify critical deficiencies ==
 In the next step, the detected deficiency occurrences are ranked in order to identify the occurrences that are the most critical.
 This is accomplished by the deficiency ranking (see Figure~\ref{fig:DeficiencyRanking}).
 
@@ -132,7 +142,7 @@ The last column states if the deficiency occurrence is Pareto optimal with respe
 Again, the Pareto optimal deficiencies are highlighted in yellow.
 Those are the most critical deficiency occurrences that should be removed first.
 
-=== 6. Select automated removal strategy for the critical deficiency ===
+== 5. Select automated removal strategy for the critical deficiency ==
 
 After the detected deficiency occurrences have been ranked, the software architect can remove them according to their severity.
 This example session presents the automatic removal of one deficiency occurrence through the application of a removal strategy.
