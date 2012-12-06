@@ -10,9 +10,15 @@ You can also have a look at the [Screencast Archimetrix Screencast].
 The user guide explains the typical Archimetrix workflow by means of the [StoreExample Store Example].
 The session follows the Archimetrix process and illustrates the steps with snapshots from the tool.
 
+In order to use Archimetrix, make sure to open the _Archimetrix perspective_. 
+
 == 1. Architecture Reconstruction == 
 
-=== a. Parse the source code  ===
+The architecture reconstruction process consists of two steps.
+ * Parsing the source code into a generalized abstract syntax tree (GAST) with the parser SISSy.
+ * Reconstructing the architecture from the GAST with SoMoX.
+
+=== a. Parsing the source code  ===
 First, the source code of the system under analysis has to be parsed.
 As described above, Archimetrix uses SISSy for this task.
 SISSy is able to parse Java, C++, and Delphi code and creates an instance of the GAST meta model from it.
@@ -27,7 +33,7 @@ Before the GAST can be extracted, several properties have to be configured.
  * Finally, you have to tell SISSy what to do with the GAST. go to the _GAST Output_ page. Tick the _Write GAST output file_ check box. Then specify the path where the GAST file should be saved.
  * Start the GAST extraction by clicking on _Run_. 
 
-=== b. Reconstruct the software architecture ===
+=== b. Reconstructing the software architecture ===
 In this step, the GAST is the input for the initial architecture reconstruction step.
 The architecture reconstruction is accomplished by SoMoX.
 SISSy can be started by selecting _Archimetrix -> Start Architecture Reconstruction_ from the menu bar.
@@ -146,16 +152,20 @@ Stored detection results can also be loaded again by clicking on the http://arch
 
 == 4. Identify critical deficiencies ==
 In the next step, the detected deficiency occurrences are ranked in order to identify the occurrences that are the most critical.
-This is accomplished by the deficiency ranking (see Figure~\ref{fig:DeficiencyRanking}).
+This is accomplished by the deficiency ranking.
+It can be performed by selecting _Archimetrix -> Find Relevant Deficiencies_ from the menu bar.
 
-\begin{figure*}[htbp]
-	\centering
-	\includegraphics[width=0.8\linewidth]{figures/evaluation/tool/screen_relevantBadSmellsView2}
-	\caption{Result of the design deficiency ranking}
-	\label{fig:DeficiencyRanking}
-\end{figure*}
+http://archimetrix.googlecode.com/svn/wiki/images/DeficiencyRankingConfiguration.png
+
+The two inputs for the ranking are:
+ * A file with the detected deficiency occurrences. The typical suffix of these files is `.psa`.
+ * The metric values that were measured during the architecture reconstruction (the same values that are used in the component relevance analysis).
+Click _Finish_ to start the deficiency ranking.
 
 The results of the deficiency ranking are presented in a tabular view similar to the relevance analysis results.
+
+http://archimetrix.googlecode.com/svn/wiki/images/screen_relevantBadSmellsView2.png
+
 The first column shows the name of the deficiency while the second column states the elements (classes and methods) that play the different roles of the deficiency.
 Columns three and four show the particular ranking values while the fifth column presents the aggregated rank of the deficiency occurrence.
 The last column states if the deficiency occurrence is Pareto optimal with respect to the other occurrences.
