@@ -1,8 +1,172 @@
 #summary User guide to Archimetrix.
 
-<wiki:toc max_depth="2" />
+<wiki:toc max_depth="4" />
 
 = User Guide =
 
 This page contains a short user guide for Archimetrix.
 You can also have a look at the [Screencast Archimetrix Screencast].
+
+The user guide explains the typical Archimetrix workflow by means of the [StoreExample Store Example].
+The session follows the Archimetrix process and illustrates the steps with snapshots from the tool.
+
+== Architecture Reconstruction == 
+
+=== Parse the source code  ===
+First, the source code of the system under analysis has to be parsed.
+As described above, Archimetrix uses SISSy for this task.
+SISSy is able to parse Java, C++, and Delphi code and creates an instance of the GAST meta model from it.
+
+=== Reconstruct the software architecture ===
+In this step, the GAST is the input for the initial architecture reconstruction step.
+The architecture reconstruction is accomplished by SoMoX.
+Before the reconstruction is started, SoMoX has to be configured.
+
+http://archimetrix.googlecode.com/svn/wiki/images/SomoxConfig.png
+
+The screenshot shows the configuration of the metric weights for the reconstruction.
+These weights allow, for example, to put a greater emphasis on the coupling or the name resemblance during the architecture reconstruction.
+The concrete values are dependent on the system under analysis and have to be determined by the software architect.
+SoMoX also provides a set of empirically determined default values.
+The values shown in the screenshot are used for the architecture reconstruction of the Store Example.
+
+As a result of the architecture reconstruction, several models are created in the `models` sub folder of the specified project.
+Two of these models are shown here.
+
+http://archimetrix.googlecode.com/svn/wiki/images/ReconstructedComponents2.png
+
+This model shows the reconstructed components, the interfaces with their operations and the detected data types.
+For example, the diagram shows in the upper left that the reconstructed component `<PC No.18 ProductsListView>` provides the `IListView` interface with its `createListEntry` operation.
+This interface is required by component `<CC No.3>`.
+In addition, `PC No.18` requires the interface `ISearch`.
+
+http://archimetrix.googlecode.com/svn/wiki/images/ReconstructedArchitecture2.png
+
+Another reconstructed model places an emphasis on the connection of the reconstructed components by visualizing the model as a component diagram.
+In this diagram, the interface operations and data types are omitted.
+Instead, the connectors between the components are shown.
+The reconstructed components are contained in one large component called `SoMoX Reverse Engineered System` representing the system boundary.
+
+=== 3. Execute relevance analysis ===
+
+After the architecture reconstruction, the component relevance analysis is executed.
+The results of this analysis are shown in a specialised tabular overview (Figure~\ref{fig:RelevantComponentsView}).
+
+\begin{figure*}[htbp]
+	\centering
+	\includegraphics[width=\linewidth]{figures/evaluation/tool/screen_relevantComponentsView2}
+	\caption{Result of the component relevance analysis}
+	\label{fig:RelevantComponentsView}
+\end{figure*}
+
+The view consists of five columns.
+The first column contains the name of the component in question.
+(The names are automatically generated and assigned by SoMoX.)
+The following columns show the concrete metric values that were calculated for that component during the relevance analysis.
+These are the values of the single relevance metrics (Closeness To Threshold, Complexity) as well as of the aggregated value (Relevance Total, see Section~\ref{subsec:RelevanceCalculation}).
+The last column indicates if the relevance value of the component is Pareto optimal with respect to the other components.
+Pareto optimal (i.e.\ very relevant) components are also highlighted in yellow.
+
+=== 4. Execute deficiency detection === 
+Before the detection of deficiencies is started, the deficiencies have to be formalised.
+The editor for deficiency formalisations is shown in Figure~\ref{fig:ExamplePatternSpec}.
+It shows a formalisation of the \emph{Interface Violation} deficiency (see Appendix~\ref{app:InterfaceViolation}).
+
+\begin{figure*}[htbp]
+	\centering
+	\includegraphics[width=\linewidth]{figures/evaluation/tool/screenDeficiencyFormalizationEditor}
+	\caption{Example deficiency specification: \emph{Interface Violation}}
+	\label{fig:ExamplePatternSpec}
+\end{figure*}
+
+
+The components for which the deficiency detection is executed can be selected by the software architect.
+Typically, he will choose a subset of those components that were identified as the most relevant in the relevance analysis.
+Figure~\ref{fig:ComponentSelection} shows the selection dialogue for the reconstructed components.
+
+\begin{figure*}[htbp]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figures/evaluation/tool/screenSelectComponentsForDetection2}
+	\caption{Dialogue for the selection of components for the deficiency detection}
+	\label{fig:ComponentSelection}
+\end{figure*}
+
+The detected deficiency occurrences are presented in a simple list (see Figure~\ref{fig:Detected Occurrences}).
+
+\begin{figure*}[htbp]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figures/evaluation/tool/screenDetectedOccurrences}
+	\caption{List view of the detected deficiency occurrences}
+	\label{fig:Detected Occurrences}
+\end{figure*}
+
+\begin{figure*}[htbp]
+	\centering
+	\includegraphics[width=\linewidth]{figures/evaluation/tool/screenDetectedIV}
+	\caption{Host graph view of a detected \emph{Interface Violation }occurrence}
+	\label{fig:HostGraphView}
+\end{figure*}
+
+The detected deficiency occurrences can also be inspected individually.
+Reclipse offers three different views for the visualisation of detection results (see Section~\ref{sec:detection:process})
+Figure~\ref{fig:HostGraphView} shows the host graph view of a detected occurrence of the \emph{Interface Violation} deficiency.
+It shows the section of the host graph which is involved in this deficiency occurrence.
+It is layouted similar to the deficiency formalisation (cf.\ Figure~\ref{fig:ExamplePatternSpec}) in order to facilitate its interpretation by the software architect.
+In addition, it also shows selected attribute values of the elements from the host graph, e.g.\ the names of the objects.
+
+=== 5. Identify critical deficiencies ===
+In the next step, the detected deficiency occurrences are ranked in order to identify the occurrences that are the most critical.
+This is accomplished by the deficiency ranking (see Figure~\ref{fig:DeficiencyRanking}).
+
+\begin{figure*}[htbp]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figures/evaluation/tool/screen_relevantBadSmellsView2}
+	\caption{Result of the design deficiency ranking}
+	\label{fig:DeficiencyRanking}
+\end{figure*}
+
+The results of the deficiency ranking are presented in a tabular view similar to the relevance analysis results.
+The first column shows the name of the deficiency while the second column states the elements (classes and methods) that play the different roles of the deficiency.
+Columns three and four show the particular ranking values while the fifth column presents the aggregated rank of the deficiency occurrence.
+The last column states if the deficiency occurrence is Pareto optimal with respect to the other occurrences.
+Again, the Pareto optimal deficiencies are highlighted in yellow.
+Those are the most critical deficiency occurrences that should be removed first.
+
+=== 6. Select automated removal strategy for the critical deficiency ===
+
+After the detected deficiency occurrences have been ranked, the software architect can remove them according to their severity.
+This example session presents the automatic removal of one deficiency occurrence through the application of a removal strategy.
+For this, the software architect first has to select the deficiency occurrence that is to be removed.
+Archimetrix then only shows those removal strategies that are applicable to this type of deficiency (see Figure~\ref{fig:ReengineeringStrategySelection}).
+
+\begin{figure*}[htbp]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figures/evaluation/tool/reengineering_strategies_wizard_page}
+	\caption{Selection of an automated removal strategy}
+	\label{fig:ReengineeringStrategySelection}
+\end{figure*}
+
+Before the strategy is executed and the system is changed, however, Archimetrix can first calculate the effect of the reengineering on the architecture reconstruction.
+The changes that are to be expected are shown in the architecture preview in Figure~\ref{fig:ArchitecturePreview}.
+
+\begin{figure*}[htbp]
+	\centering
+	\includegraphics[width=\linewidth]{figures/evaluation/tool/screen_architecturePrognosisView2}
+	\caption{Architecture preview}
+	\label{fig:ArchitecturePreview}
+\end{figure*}
+
+The architecture preview consists of two parts.
+The upper part contains general information about the original architecture and the previewed architecture.
+This information includes the number of components in the architecture, divided into primitive and composite components, and the number of interfaces.
+Value changes between the two architectures are emphasised in yellow.
+
+The lower part lists all the components of the original architecture (left) and the previewed architecture (right), respectively.
+Components that exist unchanged in both versions of the architecture are not marked.
+Components that existed in the original architecture but no longer exist in the previewed architecture are marked red.
+These components are no longer reconstructed as they were before the reengineering.
+Components which still exist but which contain different components and classes than before are marked yellow.
+Finally, components which did not exist in the original architecture but are newly reconstructed after reengineering are marked green (not shown in Figure~\ref{fig:ArchitecturePreview}).
+
+After the architecture preview is shown, the reengineering can be executed by applying the automated removal strategy.
+This will remove the selected deficiency occurrence by transforming the GAST of the system.
