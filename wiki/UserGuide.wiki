@@ -64,6 +64,9 @@ The reconstructed components are contained in one large component called `SoMoX 
 
 The second step of the process is the component relevance analysis. 
 To start it, select _Archimetrix -> Start Architecture Reconstruction_ from the menu bar.
+
+http://archimetrix.googlecode.com/svn/wiki/images/RelevanceAnalysisConfiguration.png
+
 For the relevance analysis, you have to specify two inputs:
  * The source code decorator model created by SoMoX. It is typically called `internal_architecture_model.sourcecodedecorator`.
  * The metric values that were measured during the architecture reconstruction. The default name is `metricValues2.ecore2`.
@@ -81,45 +84,49 @@ These are the values of the single relevance metrics (Closeness To Threshold, Co
 The last column indicates if the relevance value of the component is Pareto optimal with respect to the other components.
 Pareto optimal (i.e.\ very relevant) components are also highlighted in yellow.
 
-== 3. Execute deficiency detection == 
-Before the detection of deficiencies is started, the deficiencies have to be formalised.
-The editor for deficiency formalisations is shown in Figure~\ref{fig:ExamplePatternSpec}.
-It shows a formalisation of the \emph{Interface Violation} deficiency (see Appendix~\ref{app:InterfaceViolation}).
 
-\begin{figure*}[htbp]
-	\centering
-	\includegraphics[width=\linewidth]{figures/evaluation/tool/screenDeficiencyFormalizationEditor}
-	\caption{Example deficiency specification: \emph{Interface Violation}}
-	\label{fig:ExamplePatternSpec}
-\end{figure*}
-
+== 3. Design Deficiency Detection == 
 
 The components for which the deficiency detection is executed can be selected by the software architect.
 Typically, he will choose a subset of those components that were identified as the most relevant in the relevance analysis.
-Figure~\ref{fig:ComponentSelection} shows the selection dialogue for the reconstructed components.
+The selection can be performed in two different ways: in the _Relevant Components View_ or in the _Structural Patterns Detection Dialog_.
 
-\begin{figure*}[htbp]
-	\centering
-	\includegraphics[width=0.8\linewidth]{figures/evaluation/tool/screenSelectComponentsForDetection2}
-	\caption{Dialogue for the selection of components for the deficiency detection}
-	\label{fig:ComponentSelection}
-\end{figure*}
+=== a. Starting the deficiency detection from the Relevant Components View ===
+
+The deficiency detection can be started directly from the _Relevant Components View_.
+Right-click on the component in which you want to detect the deficiencies and select _Start Deficiency Detection on this component_.
+
+http://archimetrix.googlecode.com/svn/wiki/images/screenSelectComponentsForDetection1.png
+
+In the following dialog, you can then select the deficiency catalog that shall be used.
+For the Store Example, the catalog is called `ComponentBasedBadSmellCatalog.psc`.
+Click on _Finish_ to start the detection. 
+
+=== b. Starting the deficiency detection from the Structural Patterns Detection Dialog. ===
+
+The deficiency detection can also be started independently from the relevance analysis.
+From the menu bar, select _Archimetrix -> Start Pattern-Based Architecture Analysis_.
+The figure shows the selection dialogue for the reconstructed components.
+
+In the appearing dialog, two inputs have to be chosen:
+ * For _Pattern Specifications_, select the deficiency catalog that is to be used in the detection. For the Store Example, the catalog is called `ComponentBasedBadSmellCatalog.psc`.
+ * For _Host Graph Model_, select the source code decorator model. In the Store Example, it is called `internal_architecture_model.sourcecodedecorator`.
+Click _Next >_.
+
+On the next page, you can choose the components in which the detection should search for deficiencies. 
+In contrast to starting the detection from the _Relevant Components View_, you can also select more than one component in this dialog.
+ 
+http://archimetrix.googlecode.com/svn/wiki/images/screenSelectComponentsForDetection2.png
+
+Click _Finish_ to start the detection.
+
+=== c. Inspecting the detection results ===
 
 The detected deficiency occurrences are presented in a simple list (see Figure~\ref{fig:Detected Occurrences}).
 
-\begin{figure*}[htbp]
-	\centering
-	\includegraphics[width=0.8\linewidth]{figures/evaluation/tool/screenDetectedOccurrences}
-	\caption{List view of the detected deficiency occurrences}
-	\label{fig:Detected Occurrences}
-\end{figure*}
+http://archimetrix.googlecode.com/svn/wiki/images/screenDetectedOccurrences.png
 
-\begin{figure*}[htbp]
-	\centering
-	\includegraphics[width=\linewidth]{figures/evaluation/tool/screenDetectedIV}
-	\caption{Host graph view of a detected \emph{Interface Violation }occurrence}
-	\label{fig:HostGraphView}
-\end{figure*}
+http://archimetrix.googlecode.com/svn/wiki/images/screenDetectedIV.png
 
 The detected deficiency occurrences can also be inspected individually.
 Reclipse offers three different views for the visualisation of detection results (see Section~\ref{sec:detection:process})
