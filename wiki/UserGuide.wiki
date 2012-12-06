@@ -60,23 +60,24 @@ In this diagram, the interface operations and data types are omitted.
 Instead, the connectors between the components are shown.
 The reconstructed components are contained in one large component called `SoMoX Reverse Engineered System` representing the system boundary.
 
-== 2. Execute relevance analysis ==
+== 2. Component Relevance Analysis ==
 
-After the architecture reconstruction, the component relevance analysis is executed.
-The results of this analysis are shown in a specialised tabular overview (Figure~\ref{fig:RelevantComponentsView}).
+The second step of the process is the component relevance analysis. 
+To start it, select _Archimetrix -> Start Architecture Reconstruction_ from the menu bar.
+For the relevance analysis, you have to specify two inputs:
+ * The source code decorator model created by SoMoX. It is typically called `internal architecture model.sourcecodedecorator`.
+ * The metric values that were measured during the architecture reconstruction. The default name is `metricValues2.ecore2`.
+After having specified these values, you can start the relevance analysis by clicking on _Finish_. 
 
-\begin{figure*}[htbp]
-	\centering
-	\includegraphics[width=\linewidth]{figures/evaluation/tool/screen_relevantComponentsView2}
-	\caption{Result of the component relevance analysis}
-	\label{fig:RelevantComponentsView}
-\end{figure*}
+The results of this analysis are shown in a special tabular overview.
+
+http://archimetrix.googlecode.com/svn/wiki/images/screen_relevantComponentsView2.png
 
 The view consists of five columns.
 The first column contains the name of the component in question.
 (The names are automatically generated and assigned by SoMoX.)
 The following columns show the concrete metric values that were calculated for that component during the relevance analysis.
-These are the values of the single relevance metrics (Closeness To Threshold, Complexity) as well as of the aggregated value (Relevance Total, see Section~\ref{subsec:RelevanceCalculation}).
+These are the values of the single relevance metrics (Closeness To Threshold, Complexity) as well as of the aggregated value.
 The last column indicates if the relevance value of the component is Pareto optimal with respect to the other components.
 Pareto optimal (i.e.\ very relevant) components are also highlighted in yellow.
 
