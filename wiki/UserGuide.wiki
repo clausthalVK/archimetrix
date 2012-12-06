@@ -5,4 +5,4 @@
 = User Guide =
 
 This page contains a short user guide for Archimetrix.
-You can also have a look at the [wiki/Screencast Archimetrix Screencast].
+You can also have a look at the [Screencast Archimetrix Screencast].
