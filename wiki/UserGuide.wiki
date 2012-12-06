@@ -65,7 +65,7 @@ The reconstructed components are contained in one large component called `SoMoX 
 The second step of the process is the component relevance analysis. 
 To start it, select _Archimetrix -> Start Architecture Reconstruction_ from the menu bar.
 For the relevance analysis, you have to specify two inputs:
- * The source code decorator model created by SoMoX. It is typically called `internal architecture model.sourcecodedecorator`.
+ * The source code decorator model created by SoMoX. It is typically called `internal_architecture_model.sourcecodedecorator`.
  * The metric values that were measured during the architecture reconstruction. The default name is `metricValues2.ecore2`.
 After having specified these values, you can start the relevance analysis by clicking on _Finish_. 
 
