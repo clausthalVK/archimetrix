@@ -1,5 +1,7 @@
 #summary Sidebar for the Archimetrix wiki pages
 
+== Contents ==
+
  * [Introduction] 
  * [UserGuide User Guide]
  * [StoreExample Store Example]
