@@ -1,0 +1,9 @@
+#summary A screencast of a demo session of Archimetrix.
+
+= Screencast =
+
+There is a two-part screencast of Archimetrix which shows the basic Archimetrix process. It makes use of the Store example which is publicly available for [http://archimetrix.googlecode.com/files/StoreExample.zip download].
+
+<wiki:video url="http://www.youtube.com/watch?v=X3lpfY0yinw"/>
+
+<wiki:video url="http://www.youtube.com/watch?v=C7BhKpsgqBA"/>
