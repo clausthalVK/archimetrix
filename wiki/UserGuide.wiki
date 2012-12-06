@@ -122,18 +122,27 @@ Click _Finish_ to start the detection.
 
 === c. Inspecting the detection results ===
 
-The detected deficiency occurrences are presented in a simple list (see Figure~\ref{fig:Detected Occurrences}).
+The detected deficiency occurrences are presented in a list in the _Annotations View_.
 
 http://archimetrix.googlecode.com/svn/wiki/images/screenDetectedOccurrences.png
 
+The different detected deficiency occurrences (and their auxiliary patterns) are grouped by their type.
+The detected deficiency occurrences can also be inspected individually.
+Archimetrix offers three different views for the visualization of detection results: the _Abstract Syntax Tree Matchings View_, the _Host Graph View_, and the _Pattern Matchings View_.
+The views can be opened by selecting _Window -> Show View -> Other..._ from the menu bar and then selecting the desired view from the _Structural Inference_ category.
+
 http://archimetrix.googlecode.com/svn/wiki/images/screenDetectedIV.png
 
-The detected deficiency occurrences can also be inspected individually.
-Reclipse offers three different views for the visualisation of detection results (see Section~\ref{sec:detection:process})
-Figure~\ref{fig:HostGraphView} shows the host graph view of a detected occurrence of the \emph{Interface Violation} deficiency.
-It shows the section of the host graph which is involved in this deficiency occurrence.
-It is layouted similar to the deficiency formalisation (cf.\ Figure~\ref{fig:ExamplePatternSpec}) in order to facilitate its interpretation by the software architect.
-In addition, it also shows selected attribute values of the elements from the host graph, e.g.\ the names of the objects.
+The figure shows the host graph view of a detected occurrence of an Interface Violation deficiency.
+It shows the section of the GAST which is involved in this deficiency occurrence.
+It is layouted similar to the deficiency formalisation in order to facilitate its interpretation by the software architect.
+In addition, it also shows selected attribute values of the elements from the host graph, e.g. the names of the objects.
+
+=== d. Storing the detection results ===
+
+The detection results can be stored in a file.
+To do this, open the _Annotations View_ and click on the http://archimetrix.googlecode.com/svn/wiki/images/export.gif _Save Annotations_ button.
+Stored detection results can also be loaded again by clicking on the http://archimetrix.googlecode.com/svn/wiki/images/import.gif _Load Annotations_ button and selecting a previously saved annotations file.
 
 == 4. Identify critical deficiencies ==
 In the next step, the detected deficiency occurrences are ranked in order to identify the occurrences that are the most critical.
