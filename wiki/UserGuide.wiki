@@ -18,7 +18,7 @@ As described above, Archimetrix uses SISSy for this task.
 SISSy is able to parse Java, C++, and Delphi code and creates an instance of the GAST meta model from it.
 
 SISSy can be started by selecting _Archimetrix -> Extract GAST_ from the menu bar.
-This will bring up the _Run Cofigurations_ dialog.
+This will bring up the _Run Configurations_ dialog.
 In this dialog, select _Launch SISSy_ and click on _New launch configuration_.
 
 Before the GAST can be extracted, several properties have to be configured.
@@ -30,15 +30,18 @@ Before the GAST can be extracted, several properties have to be configured.
 === b. Reconstruct the software architecture ===
 In this step, the GAST is the input for the initial architecture reconstruction step.
 The architecture reconstruction is accomplished by SoMoX.
+SISSy can be started by selecting _Archimetrix -> Start Architecture Reconstruction_ from the menu bar.
+This will bring up the _Run Configurations_ dialog.
+In this dialog, select _Launch SoMoX_ and click on _New launch configuration_.
+
 Before the reconstruction is started, SoMoX has to be configured.
+ * On the _General_ configuration page, select the project in which the reconstructed architecture model will be stored. In addition, you have to specify the GAST of the system.
+ * The metric weights on the _SoMoX Configuration_ page allow, for example, to specify which properties the clustering should focus on. For example, you can put a greater emphasis on the coupling or the name resemblance during the architecture reconstruction. The concrete values are dependent on the system under analysis and have to be determined by the software architect. SoMoX also provides a set of empirically determined default values.
+ * On the _Blacklist_ tab of the _SoMoX Configuration_ page, tick the check box of the `java` package.
+
+The following screenshot shows the configuration of the metric weights for the reconstruction of the Store Example architecture. 
 
 http://archimetrix.googlecode.com/svn/wiki/images/SomoxConfig.png
-
-The screenshot shows the configuration of the metric weights for the reconstruction.
-These weights allow, for example, to put a greater emphasis on the coupling or the name resemblance during the architecture reconstruction.
-The concrete values are dependent on the system under analysis and have to be determined by the software architect.
-SoMoX also provides a set of empirically determined default values.
-The values shown in the screenshot are used for the architecture reconstruction of the Store Example.
 
 As a result of the architecture reconstruction, several models are created in the `models` sub folder of the specified project.
 Two of these models are shown here.
