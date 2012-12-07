@@ -150,7 +150,7 @@ The detection results can be stored in a file.
 To do this, open the _Annotations View_ and click on the http://archimetrix.googlecode.com/svn/wiki/images/export.gif _Save Annotations_ button.
 Stored detection results can also be loaded again by clicking on the http://archimetrix.googlecode.com/svn/wiki/images/import.gif _Load Annotations_ button and selecting a previously saved annotations file.
 
-== 4. Identify critical deficiencies ==
+== 4. Design Deficiency Ranking ==
 In the next step, the detected deficiency occurrences are ranked in order to identify the occurrences that are the most critical.
 This is accomplished by the deficiency ranking.
 It can be performed by selecting _Archimetrix -> Find Relevant Deficiencies_ from the menu bar.
@@ -172,41 +172,40 @@ The last column states if the deficiency occurrence is Pareto optimal with respe
 Again, the Pareto optimal deficiencies are highlighted in yellow.
 Those are the most critical deficiency occurrences that should be removed first.
 
-== 5. Select automated removal strategy for the critical deficiency ==
+== 5. Automatic Deficiency Removal and Architecture Preview ==
 
 After the detected deficiency occurrences have been ranked, the software architect can remove them according to their severity.
-This example session presents the automatic removal of one deficiency occurrence through the application of a removal strategy.
+He can either remove the deficiency manually by changing the source code of the system.
+In that case, he has to begin the next cycle of the Archimetrix process with parsing the changed source code into a new GAST.
+He can also use automatic model transformations to remove the deficiencies.
+In the current implementation, Story Diagrams are used for this purpose.
+If such an automatic transformation is used to remove a deficiency occurrence, the architect can preview the effect that the removal has on the system under analysis.
+
+This example presents the automatic removal of one deficiency occurrence through the application of a removal strategy.
 For this, the software architect first has to select the deficiency occurrence that is to be removed.
-Archimetrix then only shows those removal strategies that are applicable to this type of deficiency (see Figure~\ref{fig:ReengineeringStrategySelection}).
+In the _Relevant Deficiencies View_, right-click on the deficiency occurrence for which the architecture preview should be performed and select _View Architecture Preview for this Deficiency Occurrence_ from the context menu.
 
-\begin{figure*}[htbp]
-	\centering
-	\includegraphics[width=0.8\linewidth]{figures/evaluation/tool/reengineering_strategies_wizard_page}
-	\caption{Selection of an automated removal strategy}
-	\label{fig:ReengineeringStrategySelection}
-\end{figure*}
+http://archimetrix.googlecode.com/svn/wiki/images/screenStartArchitecturePreview.png
 
-Before the strategy is executed and the system is changed, however, Archimetrix can first calculate the effect of the reengineering on the architecture reconstruction.
-The changes that are to be expected are shown in the architecture preview in Figure~\ref{fig:ArchitecturePreview}.
+Archimetrix then shows the automatic removal strategies that are applicable to this type of deficiency.
 
-\begin{figure*}[htbp]
-	\centering
-	\includegraphics[width=\linewidth]{figures/evaluation/tool/screen_architecturePrognosisView2}
-	\caption{Architecture preview}
-	\label{fig:ArchitecturePreview}
-\end{figure*}
+http://archimetrix.googlecode.com/svn/wiki/images/reengineering_startegies_wizard_page.png
+
+The architectural changes that are to be expected are shown in the _Architecture Preview View_.
+
+http://archimetrix.googlecode.com/svn/wiki/images/screen_architecturePreviewView2.png
 
 The architecture preview consists of two parts.
 The upper part contains general information about the original architecture and the previewed architecture.
 This information includes the number of components in the architecture, divided into primitive and composite components, and the number of interfaces.
-Value changes between the two architectures are emphasised in yellow.
+Value changes between the two architectures are emphasized in yellow.
 
 The lower part lists all the components of the original architecture (left) and the previewed architecture (right), respectively.
 Components that exist unchanged in both versions of the architecture are not marked.
 Components that existed in the original architecture but no longer exist in the previewed architecture are marked red.
 These components are no longer reconstructed as they were before the reengineering.
 Components which still exist but which contain different components and classes than before are marked yellow.
-Finally, components which did not exist in the original architecture but are newly reconstructed after reengineering are marked green (not shown in Figure~\ref{fig:ArchitecturePreview}).
+Finally, components which did not exist in the original architecture but are newly reconstructed after reengineering are marked green.
 
 After the architecture preview is shown, the reengineering can be executed by applying the automated removal strategy.
 This will remove the selected deficiency occurrence by transforming the GAST of the system.
