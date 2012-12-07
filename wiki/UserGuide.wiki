@@ -111,7 +111,7 @@ Click on _Finish_ to start the detection.
 === b. Starting the deficiency detection from the Structural Patterns Detection Dialog. ===
 
 The deficiency detection can also be started independently from the relevance analysis.
-From the menu bar, select _Archimetrix -> Start Pattern-Based Architecture Analysis_.
+From the menu bar, select _Archimetrix -> Detect Design Deficiencies_.
 The figure shows the selection dialogue for the reconstructed components.
 
 In the appearing dialog, two inputs have to be chosen:
