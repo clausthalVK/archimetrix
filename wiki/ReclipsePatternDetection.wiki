@@ -19,6 +19,13 @@ Structural patterns can be specified in a graphical DSL using a GEF editor. The 
 
 http://archimetrix.googlecode.com/svn/wiki/images/PatternFormalizationEditor.png
 
+The formalizations consist of four major parts:
+
+ * Mandatory, core elements:
+ * Negative elements:
+ * Set fragments:
+ * Additonal elements:
+
 More examples and explanations about the DSL can be found here: 
  * [http://ubdok.uni-paderborn.de/servlets/DocumentServlet?id=5163 Ph.D. thesis by Jörg Niere (German)]
  * [http://ubdok.uni-paderborn.de/servlets/DocumentServlet?id=5625 Ph.D. thesis by Lothar Wendehals (German)]
@@ -44,6 +51,14 @@ The engines are generated into an Ecore file which is typically named _"catalogN
  * one package for the engines.
 
 For every pattern formalization, an annotation class is generated in the annotations package. Objects of these annotation classes are created during the pattern detection and attached to the pattern occurrences in the host graph.
+
+In the engines package, an engine class is created for each to pattern formalization, provided it is not an abstract pattern. (Abstract patterns only define the roles that are played in a pattern but not how they are connected, i.e. they cannot be detected in the host graph but have to be extended by concrete patterns).
+
+The engine class contains three methods:
+
+ # _annotate_: This is the main method for the detection of a corresponding pattern. It tries to match the core structure of the pattern in the host graph and calls the other methods if necessary.
+ # _findAdditionalElements_: This method is used to find additonal fragments of a pattern in the host graph.
+ # _findSetFragments_:
 
 == Generation of expressions ==
 
