@@ -39,6 +39,12 @@ The picture shows the general process for the generation of detection engines fr
 
 http://archimetrix.googlecode.com/svn/wiki/images/EngineGenerationProcess.png
 
+The engines are generated into an Ecore file which is typically named _"catalogName".psc.ecore_. This Ecore file contains two packages: 
+ * One package for the annotations and 
+ * one package for the engines.
+
+For every pattern formalization, an annotation class is generated in the annotations package. Objects of these annotation classes are created during the pattern detection and attached to the pattern occurrences in the host graph.
+
 == Generation of expressions ==
 
 = Pattern Detection = 
