@@ -15,9 +15,14 @@ The pattern detection in Reclipse consists of three basic parts:
 
 = Pattern Formalization =
 
-Structural patterns can be specified in a graphical DSL using a GEF editor. The patterns show object structures that represent a certain design pattern or design deficiency and that are to be detected in the host graph. The objects are typed over a EMF metamodel. In the case of Archimetrix, this metamodel is the combination of Source Code Decorator metamodel, SAM metamodel, and GAST metamodel. The registration of metamodels can be accomplished via the extension point _org.reclipse.structure.specification.metamodel_. The registration of the metamodels used in Archimetrix is performed in the plug-in _org.reclipse.gast_.
+Structural patterns can be specified in a graphical DSL using a GEF editor. The patterns show object structures that represent a certain design pattern or design deficiency and that are to be detected in the host graph.
 
 http://archimetrix.googlecode.com/svn/wiki/images/PatternFormalizationEditor.png
+
+== Metamodel registration ==
+The objects are typed over a EMF metamodel. In the case of Archimetrix, this metamodel is the combination of Source Code Decorator metamodel, SAM metamodel, and GAST metamodel. The registration of metamodels can be accomplished via the extension point _org.reclipse.structure.specification.metamodel_. The registration of the metamodels used in Archimetrix is performed in the plug-in _org.reclipse.gast_.
+
+
 
 = Engine Generation = 
 
