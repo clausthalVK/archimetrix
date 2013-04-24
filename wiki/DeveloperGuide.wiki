@@ -1,0 +1,3 @@
+#summary Developer guide, containing useful information for the deeper understanding and extension of Archimetrix.
+
+= Explanation of the Design Deficiency Detection =
