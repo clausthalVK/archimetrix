@@ -26,4 +26,6 @@ The objects are typed over a EMF metamodel. In the case of Archimetrix, this met
 
 = Engine Generation = 
 
+http://archimetrix.googlecode.com/svn/wiki/images/EngineGenerationProcess.png
+
 = Pattern Detection = 
