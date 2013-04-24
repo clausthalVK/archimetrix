@@ -15,7 +15,7 @@ The pattern detection in Reclipse consists of three basic parts:
 
 = Pattern Formalization =
 
-Structural patterns can be specified in a graphical DSL using a GEF editor. The patterns show object structures that represent a certain design pattern or design deficiency and that are to be detected in the host graph. More about the DSL can be found in this technical report: https://www.hni.uni-paderborn.de/publikationen/publikationen/?tx_hnippview_pi1[publikation]=6951
+Structural patterns can be specified in a graphical DSL using a GEF editor. The patterns show object structures that represent a certain design pattern or design deficiency and that are to be detected in the host graph. More about the DSL can be found in this technical report: [https://www.hni.uni-paderborn.de/publikationen/publikationen/?tx_hnippview_pi1[publikation]=6951 Report]
 
 http://archimetrix.googlecode.com/svn/wiki/images/PatternFormalizationEditor.png
 
