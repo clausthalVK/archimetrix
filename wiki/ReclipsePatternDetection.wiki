@@ -69,5 +69,15 @@ Originally, the story diagram meta model was devised with a complete sub package
 The different constraints that can be modeled in Reclipse patterns (e.g. attribute constraints) are translated into OCL constraints by the class _org.reclipse.structure.generator.util.ExpressionsUtil_.
 
 = Pattern Detection = 
+The following acticity describes the pattern detection process.
 
 http://archimetrix.googlecode.com/svn/wiki/images/PatternDetectionProcess.png
+
+The pattern detection is performed by an _InferenceEngine_ which is configured by an _InferenceStrategy_. 
+
+ # In the current implementation, the default is an _InterpreterInferenceEngine_ which is configured with a _BottomUpStrategy_. This is due to the use of an inference engine that _interprets_ the generated detection engines, i.e. the story diagrams. This is done by first interpreting the most basic story diagrams that do not use other story diagrams and then building on the results of those detections. For example, the simple _Generalization_ pattern would be detected before a _Strategy_ pattern because a strategy pattern makes use of generalization relationships.
+ # For every pattern, first its mandatory, non-negative core elements are matched. If these cannot be detected, there are no valid occurrences of this pattern in the host graph.
+  # The matching is started by identifying all _trigger nodes_ in the host graph. For every pattern formalization, a trigger node is determined automatically by the class _org.reclipse.structure.specification.util.TriggerManager_. If for example, an object of the type GASTClass is chosen as the trigger, the detection of this pattern will start at all the objects of the type GASTClass in the host graph. Each of this objects if the _context_ for one attempt to match a pattern occurrence. Each combination of a context and a pattern that is the starting point for such a matching is called a _ContextPatternPair_.
+  # Each _InferenceStrategy_ which can be used to configure an _InferenceEngine_
+ 
+ # 
