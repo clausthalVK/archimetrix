@@ -21,9 +21,9 @@ http://archimetrix.googlecode.com/svn/wiki/images/PatternFormalizationEditor.png
 
 The formalizations consist of the following major parts:
 
- * Mandatory, core elements: Normal objects and links which are displayed in black in the concrete syntax. The objects and links have to be found in the host graph for a pattern occurrence to be present. All constraints on mandatory objects have to hold (except for constraints that are explicitly marked as additional).
+ * *Mandatory, core elements*: Normal objects and links which are displayed in black in the concrete syntax. The objects and links have to be found in the host graph for a pattern occurrence to be present. All constraints on mandatory objects have to hold (except for constraints that are explicitly marked as additional).
  * Negative elements: Negative objects and links are crossed out in the concrete syntax (e.g the _publicConstructor_ object in the screenshot above). If these elements are found, that means that no valid pattern occurrence exists at that point of the host graph.
- * Set fragments: In some cases, it is necessary to express that a pattern can contain more than one occurrence of a certain object (e.g. more than one concrete startegy in a strategy pattern). This can be achieved by enclosing the group of objects in a set fragment. If only one object should can exist more often than once, a short-hand notation for the set fragment is the (semantically equivalent) "set object" which is displayed with a stacked border. Note that sets may always be empty, i.e. they are realized with a 0..* semantics.
+ * Set fragments: In some cases, it is necessary to express that a pattern can contain more than one occurrence of a certain object (e.g. more than one concrete startegy in a strategy pattern). This can be achieved by enclosing the group of objects in a set fragment. If only one object should can exist more often than once, a short-hand notation for the set fragment is the (semantically equivalent) "set object" which is displayed with a stacked border. Note that sets may always be empty, i.e. they are realized with a 0..´* semantics.
  * Additonal elements: Sometimes,  
  * Sub patterns:
  * The annotation:
