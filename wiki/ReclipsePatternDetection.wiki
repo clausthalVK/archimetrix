@@ -15,13 +15,16 @@ The pattern detection in Reclipse consists of three basic parts:
 
 = Pattern Formalization =
 
-Structural patterns can be specified in a graphical DSL using a GEF editor. The patterns show object structures that represent a certain design pattern or design deficiency and that are to be detected in the host graph. More examples and explanations about the DSL can be found here: 
+Structural patterns can be specified in a graphical DSL using a GEF editor. The patterns show object structures that represent a certain design pattern or design deficiency and that are to be detected in the host graph. 
+
+http://archimetrix.googlecode.com/svn/wiki/images/PatternFormalizationEditor.png
+
+More examples and explanations about the DSL can be found here: 
  * [http://ubdok.uni-paderborn.de/servlets/DocumentServlet?id=5163 Ph.D. thesis by Jörg Niere (German)]
  * [http://ubdok.uni-paderborn.de/servlets/DocumentServlet?id=5625 Ph.D. thesis by Lothar Wendehals (German)]
  * [http://ubdok.uni-paderborn.de/servlets/DocumentServlet?id=11678 Ph.D. thesis by Matthias Meyer (German)]
  * Technical report: https://www.hni.uni-paderborn.de/publikationen/publikationen/?tx_hnippview_pi1[publikation]=6951
 
-http://archimetrix.googlecode.com/svn/wiki/images/PatternFormalizationEditor.png
 
 == Metamodel registration ==
 The objects are typed over a EMF metamodel. In the case of Archimetrix, this metamodel is the combination of Source Code Decorator metamodel, SAM metamodel, and GAST metamodel. The registration of metamodels can be accomplished via the extension point _org.reclipse.structure.specification.metamodel_. The registration of the metamodels used in Archimetrix is performed in the plug-in _org.reclipse.gast_.
@@ -30,6 +33,14 @@ The objects are typed over a EMF metamodel. In the case of Archimetrix, this met
 
 = Engine Generation = 
 
+== Generation Process ==
+
+The picture shows the general process for the generation of detection engines from the pattern formalizations.
+
 http://archimetrix.googlecode.com/svn/wiki/images/EngineGenerationProcess.png
 
+== Generation of expressions ==
+
 = Pattern Detection = 
+
+http://archimetrix.googlecode.com/svn/wiki/images/PatternDetectionProcess.png
