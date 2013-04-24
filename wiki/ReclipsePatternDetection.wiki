@@ -4,6 +4,8 @@
 
 = Introduction =
 
+In addition to this documentation, you should have a look at the _Reclipse Help Plug-In (org.reclipse.structure.help)_ that can be found in the Reclipse repository (http://dsd-serv.uni-padern.de/svn/reclipse-emf).
+
 The pattern detection in Reclipse consists of three basic parts:
 
  # _Formalization_ of the patterns that are to be detection.
