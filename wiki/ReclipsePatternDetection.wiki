@@ -1,0 +1,18 @@
+#summary Description of the pattern detection in Reclipse.
+
+<wiki:toc max_depth="4" />
+
+= Introduction =
+
+The pattern detection in Reclipse consists of three basic parts:
+
+ # _Formalization_ of the patterns that are to be detection.
+ # _Generation_ of detection engines (i.e. story diagrams) from the formalized patterns.
+ # Detection of the patterns by executing the generated engines.
+
+
+= Pattern Formalization =
+
+= Engine Generation = 
+
+= Pattern Detection = 
