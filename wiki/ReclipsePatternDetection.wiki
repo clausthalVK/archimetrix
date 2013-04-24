@@ -62,6 +62,10 @@ The engine class contains three methods:
 
 == Generation of expressions ==
 
+Originally, the story diagram meta model was devised with a complete sub package for the modeling of expressions. However, this was pretty complicated and noone ever created a working interpreter for that. Therefore, in the current version of the SD metamodel as described in the techreport v0.2 (https://www.hni.uni-paderborn.de/publikationen/publikationen/?tx_hnippview_pi1[publikation]=6886), OCL is used for the evaluation of expression.
+
+The different constraints that can be modeled in Reclipse patterns (e.g. attribute constraints) are translated into OCL constraints by the class _org.reclipse.structure.generator.util.ExpressionsUtil_.
+
 = Pattern Detection = 
 
 http://archimetrix.googlecode.com/svn/wiki/images/PatternDetectionProcess.png
