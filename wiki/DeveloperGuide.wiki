@@ -1,3 +1,9 @@
 #summary Developer guide, containing useful information for the deeper understanding and extension of Archimetrix.
 
+<wiki:toc max_depth="4" />
+
 = Explanation of the Design Deficiency Detection =
+
+The following activity describes the general process of the design deficiency detection in Archimetrix. Only the parts that are specific for Archimetrix are described here. The description of the pattern detection in Reclipse can be found here.
+
+http://archimetrix.googlecode.com/svn/wiki/images/DeficiencyDetectionDocumentation.png
