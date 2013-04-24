@@ -58,9 +58,9 @@ In the engines package, an engine class is created for each to pattern formaliza
 
 The engine class contains three methods:
 
- # _annotate_: This is the main method for the detection of a corresponding pattern. It tries to match the core structure of the pattern in the host graph and calls the other methods if necessary.
- # _findAdditionalElements_: This method is used to find additonal fragments of a pattern in the host graph.
- # _findSetFragments_:
+ # _annotate_: This is the main method for the detection of a corresponding pattern. It tries to match the core objects of the pattern in the host graph and calls the other methods if necessary.
+ # _findAdditionalElements_: This method is used to find additonal elements of a pattern in the host graph. It is only generated if the pattern contains additional elements.
+ # _findSetFragments_: Tries to find as many instances of the specified set fragments as possible. It is only generated if there are set fragments in the pattern.
 
 == Generation of expressions ==
 
