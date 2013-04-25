@@ -3,6 +3,10 @@
 == Contents ==
 
  * [Introduction] 
+ * [InstallationInstructions Installation Instructions]
  * [UserGuide User Guide]
+ * Developer Guide
+  * [DeveloperGuide Archimetrix Developer Guide]
+  * [ReclipsePatternDetection Reclipse Developer Guide]
  * [Screencast]
  * [StoreExample Store Example]
