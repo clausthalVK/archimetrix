@@ -6,7 +6,7 @@ This page covers the extension of Archimetrix and explains a few details about i
 
 = Extension of the Component Relevance Analysis = 
 
-The relevance analysis is extensible with new relevance strategies. new strategies have to implement the interface `IComponentsStrategy`.
+The relevance analysis is extensible with new relevance strategies. new strategies have to implement the interface `org.archimetrix.relevanceanalysis.components.IComponentsStrategy`. At the moment, the initialization of all available strategies is hard-coded in the class `org.archimetrix.relevanceanalysis.components.RelevantComponentAnalysis`.
 
 = Design Deficiency Detection =
 
