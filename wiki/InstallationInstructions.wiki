@@ -1,7 +1,28 @@
 #summary Installation instructions for users and developers.
 
+There are two ways to obtain a copy of Archimetrix: Either you install a bundled-up, ready-to-use feature into your Eclipse workbench, or you piece a development version together from different sources. This page describes first the user installation and, after that, the development installation. 
+
+<wiki:toc max_depth="4" />
+
 = User Installation =
 
-
+If you only want to try out Archimetrix without actively developing it, there is an Eclipse feature of Archimetrix available for easy installation. You can install it as follows
+  
+   * Download and install the [http://www.eclipse.org/downloads/packages/release/helios/sr1 Eclipse Modeling Tools in version 3.6.1].
+   * Select Help -> Install New Software... and install Archimetrix from our [http://dsd-serv.uni-paderborn.de/svn/updatesites/tags/Archimetrix_Release_1.3 update site].
 
 = Developer Installation =
+
+In order to develop Archimetrix, you need a range of features and plug-ins. 
+
+== Necessary features ==
+
+== Necessary workspace plug-ins ==
+
+=== Story diagrams ===
+
+=== Reclipse ===
+
+=== Archimetrix ===
+
+=== Somox (optional) ===
