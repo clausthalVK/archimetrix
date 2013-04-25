@@ -6,10 +6,14 @@ This page covers the extension of Archimetrix and explains a few details about i
 
 = Extension of the Component Relevance Analysis = 
 
+The relevance analysis is extensible with new relevance strategies. new strategies have to implement the interface `IComponentsStrategy`.
+
 = Design Deficiency Detection =
 
 The following activity describes the general process of the design deficiency detection in Archimetrix. Only the parts that are specific for Archimetrix are described here. The description of the pattern detection in Reclipse can be found [ReclipsePatternDetection here].
 
 http://archimetrix.googlecode.com/svn/wiki/images/DeficiencyDetectionDocumentation.png
+
+== Modification of detection engines ==
 
 = Extension of the Deficiency Ranking =
