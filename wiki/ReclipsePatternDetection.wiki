@@ -1,4 +1,4 @@
-#summary Description of the pattern detection in Reclipse.
+#summary Developer guide to the pattern detection in Reclipse.
 
 <wiki:toc max_depth="4" />
 
