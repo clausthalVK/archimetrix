@@ -43,6 +43,11 @@ http://archimetrix.googlecode.com/svn/wiki/images/plugins/SDInterpreterPlugins.p
 
 === Reclipse ===
 
+Reclipse can be obtained from [http://dsd-serv.uni-paderborn.de/svn/reclipse-emf this repository]. (You will need an account. When in doubt, consult with [mailto:sammy@upb.de Jürgen Maniera].)
+From Reclipse, only the plug-ins for the formalization, generation, and detection of structural patterns are necessary.
+
+http://archimetrix.googlecode.com/svn/wiki/images/plugins/ReclipsePlugins.png
+
 === Archimetrix ===
 
 === Somox (optional) ===
