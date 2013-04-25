@@ -10,7 +10,7 @@ This page covers the extension of Archimetrix and explains a few details about i
 The relevance analysis is extensible with new relevance strategies. new strategies have to implement the interface `org.archimetrix.relevanceanalysis.components.IComponentsStrategy`. At the moment, the initialization of all available strategies is hard-coded in the class `org.archimetrix.relevanceanalysis.components.RelevantComponentAnalysis`. This should probably be refactored into an extension point mechanism.
 
 == Configuration of the Closeness To Threshold strategy ==
-This strategy identifies components whose merge or composition value was close to the respective threshold during the architecture reconstruction (see Section 6.5.2 in [http://digital.ub.uni-paderborn.de/ubpb/urn/urn:nbn:de:hbz:466:2-10973 this thesis]).
+This strategy identifies components whose merge or composition value was close to the respective threshold during the architecture reconstruction (see Section 6.5.2 in [http://digital.ub.uni-paderborn.de/ubpb/urn/urn:nbn:de:hbz:466:2-10973 this thesis]). The user can configure how close a value may be to the threshold to be regarded as significant. This configuration can be performed in the file `config/config.properties` in the plug-in `org.archimetrix.relevanceanalysis`. The default value is 0.1.
 
 = Design Deficiency Detection =
 
