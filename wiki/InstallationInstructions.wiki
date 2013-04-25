@@ -23,7 +23,7 @@ http://archimetrix.googlecode.com/svn/wiki/images/plugins/XFeatures.png
 
 In addition, you need the Palladio Workflow Engine which is used in SoMoX and, optionally, SoMoX itself. The workflow engine is available on this [http://sdqweb.ipd.kit.edu/eclipse/workflowengine/releases/1.4/ update site].
 
-SoMoX can either be installed as a feature from this [http://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ update site], or the relevant plug-ins can be checked out from the repository (see [InstallationInstructions#Somox_(optional)]).
+SoMoX can either be installed as a feature from this [http://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ update site], or the relevant plug-ins can be checked out from the repository (see [InstallationInstructions#Somox_(optional) below]).
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/FZIFeatures.png
 
