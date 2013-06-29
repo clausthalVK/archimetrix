@@ -21,7 +21,7 @@ Since some of the plug-ins make use of Xtext and Xpand, you need the respective 
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/XFeatures.png
 
-In addition, you need the Palladio Workflow Engine which is used in SoMoX and, optionally, SoMoX itself. The workflow engine is available on this [http://sdqweb.ipd.kit.edu/eclipse/workflowengine/releases/1.4/ update site].
+In addition, you need the Palladio Workflow Engine which is used in SoMoX and SoMoX itself. The workflow engine is available on this [http://sdqweb.ipd.kit.edu/eclipse/workflowengine/releases/1.4/ update site].
 
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/FZIFeatures.png
