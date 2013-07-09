@@ -21,17 +21,15 @@ Since some of the plug-ins make use of Xtext and Xpand, you need the respective 
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/XFeatures.png
 
-In addition, you need the Palladio Workflow Engine which is used in SoMoX and SoMoX itself. The workflow engine is available on this [http://sdqweb.ipd.kit.edu/eclipse/workflowengine/releases/1.4/ update site].
+From Eclipse Marketplace you need to install Palladio Component Model. 
 
+In addition, you need the SoMoX feature which is available on this [http://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ update site], Gast model feature available on this [http://sissy.sourceforge.net/SISSy_Nightly update site] and Qimpress SAMM Feature available on [http://q-impress.ow2.org/updateSite update site].
 
-http://archimetrix.googlecode.com/svn/wiki/images/plugins/FZIFeatures.png
-
-SoMoX can either be installed as a feature from this [http://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ update site], or the relevant plug-ins can be checked out from the repository (see [InstallationInstructions#Somox_(optional) below]).
 
 
 == Workspace plug-ins ==
 
-You need plug-ins from three or four different projects: The story diagrams metamodel and interpreter, Reclipse, Archimetrix itself, and optionally SoMoX if you did not install it as a feature.
+You need plug-ins from three: The story diagrams metamodel and interpreter, Reclipse and Archimetrix itself.
 
 === Story diagrams ===
 
@@ -53,9 +51,3 @@ http://archimetrix.googlecode.com/svn/wiki/images/plugins/ReclipsePlugins.png
 Archimetrix is available in the repository belonging to this project. You will need the following plug-ins:
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/ArchimetrixPlugins.png
-
-=== Somox (optional) ===
-
-If you did not install the SoMoX feature, you will also need to checkout the SoMoX plugins. They are available [svn://svn.forge.objectweb.org/svnroot/q-impress here].
-
-http://archimetrix.googlecode.com/svn/wiki/images/plugins/SomoxPlugins.png
