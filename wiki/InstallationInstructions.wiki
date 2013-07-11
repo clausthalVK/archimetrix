@@ -23,7 +23,7 @@ http://archimetrix.googlecode.com/svn/wiki/images/plugins/XFeatures.png
 
 From Eclipse Marketplace you need to install Palladio Component Model. 
 
-In addition, you need the SoMoX feature which is available on this [http://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ update site], Gast model feature available on this [http://sissy.sourceforge.net/SISSy_Nightly update site] and Qimpress SAMM Feature available on [http://q-impress.ow2.org/updateSite update site].
+In addition, you need the SoMoX feature which is available on this [http://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ update site], Gast model feature available on this [http://sissy.sourceforge.net/SISSy_Nightly update site] and Qimpress SAMM Feature available on this [http://q-impress.ow2.org/updateSite update site].
 
 
 
