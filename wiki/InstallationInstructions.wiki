@@ -8,8 +8,13 @@ There are two ways to obtain a copy of Archimetrix: Either you install a bundled
 
 If you only want to try out Archimetrix without actively developing it, there is an Eclipse feature of Archimetrix available for easy installation. You can install it as follows
   
-   * Download and install the [http://www.eclipse.org/downloads/packages/release/helios/sr1 Eclipse Modeling Tools in version 3.6.1].
-   * Select Help -> Install New Software... and install Archimetrix from our [http://dsd-serv.uni-paderborn.de/svn/updatesites/tags/Archimetrix_Release_1.3 update site].
+   * Download and install the [http://www.eclipse.org/downloads/packages/release/juno/sr2 Eclipse Modeling Tools].
+   * Select Help -> Install New Software... and install SoMoX feature from the [http://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ update site].
+   * Select Help -> Install New Software... and install Gast model  feature from the [http://sissy.sourceforge.net/SISSy_Nightly update site].
+   * Select Help -> Install New Software... and install SAMM feature from the [http://q-impress.ow2.org/updateSite update site].
+   * Select Help -> Install New Software... and from category Modelling from Eclipse Juno update site install Xtext and Xpand features. 
+   * Select Help -> Install New Software... and install Archimetrix from our [http://archimetrix.googlecode.com/svn/ArchimetrixUpdatesite/ update site].
+
 
 = Developer Installation =
 
@@ -23,7 +28,7 @@ http://archimetrix.googlecode.com/svn/wiki/images/plugins/XFeatures.png
 
 From Eclipse Marketplace you need to install Palladio Component Model. 
 
-In addition, you need the SoMoX feature which is available on this [http://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ update site], Gast model feature available on this [http://sissy.sourceforge.net/SISSy_Nightly update site] and Qimpress SAMM Feature available on this [http://q-impress.ow2.org/updateSite update site].
+In addition, you need the SoMoX feature which is available on this [http://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ update site], Gast model feature available on this [http://sissy.sourceforge.net/SISSy_Nightly update site] and Qimpress SAMM feature available on this [http://q-impress.ow2.org/updateSite update site].
 
 
 
