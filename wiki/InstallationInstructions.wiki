@@ -8,7 +8,7 @@ There are two ways to obtain a copy of Archimetrix: Either you install a bundled
 
 If you only want to try out Archimetrix without actively developing it, there is an Eclipse feature of Archimetrix available for easy installation. You can install it as follows
   
-   * Download and install the [http://www.eclipse.org/downloads/packages/release/juno/sr2 Eclipse Modeling Tools].
+   * Download and install the [http://www.eclipse.org/downloads/packages/release/juno/sr2 Eclipse Modeling Tools (Juno)].
    * Select Help -> Install New Software... and install SoMoX feature from the [http://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ update site].
    * Select Help -> Install New Software... and install Gast model  feature from the [http://sissy.sourceforge.net/SISSy_Nightly update site].
    * Select Help -> Install New Software... and install SAMM feature from the [http://q-impress.ow2.org/updateSite update site].
