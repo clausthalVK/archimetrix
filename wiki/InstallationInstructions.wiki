@@ -6,10 +6,10 @@ There are two ways to obtain a copy of Archimetrix: Either you install a bundled
 
 = User Installation =
 
-If you only want to try out Archimetrix without actively developing it, there is an Eclipse feature of Archimetrix available for easy installation. You can install it as follows
+If you only want to try out Archimetrix without actively developing it, there is an Eclipse feature of Archimetrix available for easy installation. Before you install the Archimetrix feature, you need to install few more more steps, as follows
   
-   * Download and install the [http://www.eclipse.org/downloads/packages/release/juno/sr2 Eclipse Modeling Tools (Juno)].
-   * Select Help -> Install New Software... and from category Modelling from Eclipse Juno update site install Xtext and Xpand features.
+   * Download and install the [http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/keplerr Eclipse Modeling Tools (Kepler)] by choosing the your target OS on the right side download links section.
+   * Select Help -> Install New Software... and from category Modelling from Eclipse Kepler update site install Xtext and Xpand features.
    * Select Help -> Install New Software... and install SoMoX feature from the [http://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ update site].
    * Select Help -> Install New Software... and install Gast model  feature from the [http://sissy.sourceforge.net/SISSy_Nightly update site].
    * Select Help -> Install New Software... and install SAMM feature from the [http://q-impress.ow2.org/updateSite update site]. 
@@ -18,23 +18,22 @@ If you only want to try out Archimetrix without actively developing it, there is
 
 = Developer Installation =
 
-In order to develop Archimetrix, you need a range of features and plug-ins. 
+In order to set up the Eclipse Kepler environment to develop Archimetrix, you need to execute the following steps 
 
-== Features ==
-
-Since some of the plug-ins make use of Xtext and Xpand, you need the respective features in your installation.
-
-http://archimetrix.googlecode.com/svn/wiki/images/plugins/XFeatures.png
-
-From Eclipse Marketplace you need to install Palladio Component Model. 
-
-In addition, you need the SoMoX feature which is available on this [http://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ update site], Gast model feature available on this [http://sissy.sourceforge.net/SISSy_Nightly update site] and Qimpress SAMM feature available on this [http://q-impress.ow2.org/updateSite update site].
-
-
+   * Download and install the [http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/keplerr Eclipse Modeling Tools (Kepler)] by choosing the your target OS on the right side download links section.
+   * Select Help -> Install New Software... and from category Modelling from Eclipse Kepler update site install Xtext and Xpand features.
+   * Click on Install Modeling Components button and install MoDisco and QVTo.
+   * Download the Medini plugins (just the plugins!!) from [http://projects.ikv.de/qvt/downloads medini website] and put them in the plugins folder of your Eclipse.
+   * Install SoMoX. You may to this using the update site like in the User installation guide or get the source code of SoMoX. If you choose the second option import all plugins of SoMoX from the trunk folder of [https://svnserver.informatik.kit.edu/i43/svn/code/SoMoX/Core/trunk/ SoMoX repository] (anonymous, anonymous).
+   * Import all plugins of the Palladio Workflow Engine from [https://svnserver.informatik.kit.edu/i43/svn/code/WorkflowEngine/trunk/ here].
+   * Install Palladio 3.4 from Eclipse Marketplace.
+   * Select Help -> Install New Software... and install Gast model  feature from the [http://sissy.sourceforge.net/SISSy_Nightly update site].
+   * Select Help -> Install New Software... and install SAMM feature from the [http://q-impress.ow2.org/updateSite update site].
+   * The last step is to import the necessary plugins from three projects: Story diagrams, Reclipsed, and Archimetrix. Follow the next section for this step.
 
 == Workspace plug-ins ==
 
-You need plug-ins from three: The story diagrams metamodel and interpreter, Reclipse and Archimetrix itself.
+You need plug-ins from three projects: The story diagrams metamodel and interpreter, Reclipse, and Archimetrix itself.
 
 === Story diagrams ===
 
@@ -53,6 +52,6 @@ http://archimetrix.googlecode.com/svn/wiki/images/plugins/ReclipsePlugins.png
 
 === Archimetrix ===
 
-Archimetrix is available in the repository belonging to this project. You will need the following plug-ins:
+Archimetrix is available in the repository belonging to [https://archimetrix.googlecode.com/svn/trunk/ this project]. You will need the following plug-ins:
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/ArchimetrixPlugins.png
