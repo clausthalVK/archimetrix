@@ -26,7 +26,7 @@ In order to set up the Eclipse Kepler environment to develop Archimetrix, you ne
    * Install SoMoX. You may to this using the update site like in the User installation guide or get the source code of SoMoX. If you choose the second option import all plugins of SoMoX from the trunk folder of [https://svnserver.informatik.kit.edu/i43/svn/code/SoMoX/Core/trunk/ SoMoX repository] (anonymous, anonymous).
    * This step is necessary only if you are using the source code of SoMoX. Download the Medini plugins (just the plugins!!) from [http://projects.ikv.de/qvt/downloads medini website] and put them in the plugins folder of your Eclipse.
    * Import all plugins of the Palladio Workflow Engine from [https://svnserver.informatik.kit.edu/i43/svn/code/WorkflowEngine/trunk/ here].
-   * Install Palladio 3.4 from Eclipse Marketplace.
+   * Install Palladio 3.5 from Eclipse Marketplace.
    * Select Help -> Install New Software... and install Gast model  feature from the [http://sissy.sourceforge.net/SISSy_Nightly update site].
    * Select Help -> Install New Software... and install SAMM feature from the [http://q-impress.ow2.org/updateSite update site].
    * The last step is to import the necessary plugins from three projects: Story diagrams, Reclipsed, and Archimetrix. Follow the next section for this step.
