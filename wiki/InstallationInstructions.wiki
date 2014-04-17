@@ -10,7 +10,7 @@ If you only want to try out Archimetrix without actively developing it, there is
   
    * Download and install the [http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/keplerr Eclipse Modeling Tools (Kepler)] by choosing your target OS on the right side download links section.
    * Select Help -> Install New Software... and from category Modelling from Eclipse Kepler update site install Xtext and Xpand features.
-   * Install Palladio 3.5 from the Eclipse Marketplace
+   * Select Help -> Eclipse Marketplace... and install Palladio 3.5
    * Select Help -> Install New Software... and install Gast model  feature from the [http://sissy.sourceforge.net/SISSy_Nightly update site].
    * Select Help -> Install New Software... and install SAMM feature from the [http://q-impress.ow2.org/updateSite update site]. 
    * Select Help -> Install New Software... and install Archimetrix from our [https://archimetrix.googlecode.com/svn/branches/ArchimetrixForKepler/ArchimetrixUpdateSite/ update site].
