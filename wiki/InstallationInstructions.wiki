@@ -41,7 +41,7 @@ The plug-ins for the story diagram metamodel and interpreter can be found [https
 
 From the story diagrams repository, you need the following plug-ins:
 
-http://archimetrix.googlecode.com/svn/wiki/images/plugins/SDInterpreterPlugins.png
+http://archimetrix.googlecode.com/svn/wiki/images/plugins/SDPlugins.png
 
 === Reclipse ===
 
