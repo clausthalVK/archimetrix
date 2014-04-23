@@ -16,7 +16,7 @@ If you only want to try out Archimetrix without actively developing it, there is
    * Select Help -> Install New Software... and install Archimetrix from our [https://archimetrix.googlecode.com/svn/branches/ArchimetrixForKepler/ArchimetrixUpdateSite/ update site].
 
    * After restarting your Eclipse, you can choose the Archimetrix perspective and the Archimetrix menu will show up. 
-   * Recommendation: Depending on the size of your project, you may face memory issues. We use the the following VM arguments for our Eclipse: -Dosgi.requiredJavaVersion=1.5 -Dhelp.lucene.tokenizer=standard -Xmx1024m -XX:MaxPermSize =512m.
+   * Recommendation: Depending on the size of your project, you may face memory issues. We use the the following VM arguments for our Eclipse: -Xmx1024m -XX:MaxPermSize=512m.
 
 = Developer Installation =
 
