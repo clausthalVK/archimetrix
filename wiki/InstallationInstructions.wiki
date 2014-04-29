@@ -24,8 +24,7 @@ If you only want to try out Archimetrix without actively developing it, there is
 In order to set up the Eclipse Kepler environment to develop Archimetrix, you need to execute the following steps 
 
    * Download and install the [http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/keplerr Eclipse Modeling Tools (Kepler)] by choosing the your target OS on the right side download links section.
-   * Select Help -> Install New Software... and from category Modelling from Eclipse Kepler update site install Xtext and Xpand features.
-   * Click on Install Modeling Components button and install Modisco and QVTo.
+   * Select Help -> Install New Software... and from the category Modelling under Eclipse Kepler update site install Xtext, Xpand, MoDisco SDK, and QVT Operational SDK.
    * Install SoMoX. You may to this using the update site like in the User installation guide or get the source code of SoMoX. If you choose the second option import all plugins of SoMoX from the trunk folder of [https://svnserver.informatik.kit.edu/i43/svn/code/SoMoX/Core/trunk/ SoMoX repository] (anonymous, anonymous).
    * This step is necessary only if you are using the source code of SoMoX. Download the Medini plugins (just the plugins!!) from [http://projects.ikv.de/qvt/downloads medini website] and put them in the plugins folder of your Eclipse.
    * Import all plugins of the Palladio Workflow Engine from [https://svnserver.informatik.kit.edu/i43/svn/code/WorkflowEngine/trunk/ here].
