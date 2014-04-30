@@ -14,7 +14,7 @@ If you only want to try out Archimetrix without actively developing it, there is
    * Select Help -> Eclipse Marketplace... and install Palladio 3.5.
    * Select Help -> Install New Software... and install Gast model  feature from the [http://sissy.sourceforge.net/SISSy_Nightly update site].
    * Select Help -> Install New Software... and install SAMM feature from the [http://q-impress.ow2.org/updateSite update site]. 
-   * Select Help -> Install New Software... and install Archimetrix from our [https://archimetrix.googlecode.com/svn/branches/ArchimetrixForKepler/ArchimetrixUpdateSite/ update site].
+   * Select Help -> Install New Software... and install Archimetrix from our [https://archimetrix.googlecode.com/svn/branches/ArchimetrixForKepler/ArchimetrixUpdatesite/ update site].
 
    * After restarting your Eclipse, you can choose the Archimetrix perspective and the Archimetrix menu will show up. New users may follow the [https://code.google.com/p/archimetrix/wiki/UserGuide User guide] to learn more about the features of Archimetrix.
 
