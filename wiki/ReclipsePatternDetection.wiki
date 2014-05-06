@@ -2,13 +2,13 @@
 
 The pattern detection in Reclipse consists of three basic parts:
 
- # _Formalization_ of the patterns that are to be detection.
+ # _Formalization_ of the patterns that are to be detected.
  # _Generation_ of detection engines (i.e. story diagrams) from the formalized patterns.
  # _Detection_ of the patterns by executing the generated engines.
 
 <wiki:toc max_depth="4" />
 
-In addition to this documentation, you should also have a look at the _Reclipse Help Plug-In (org.reclipse.structure.help)_ that can be found in the Reclipse repository (http://dsd-serv.uni-padern.de/svn/reclipse-emf).
+In addition to this documentation, you should also have a look at the _Reclipse Help Plug-In (org.reclipse.structure.help)_ that can be found in the Reclipse repository (https://svn-serv.cs.upb.de/reclipse-emf/).
 
 = Pattern Formalization =
 
