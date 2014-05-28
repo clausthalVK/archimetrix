@@ -32,7 +32,7 @@ In order to set up the Eclipse Kepler environment to develop Archimetrix, you ne
    * Select Help -> Eclipse Marketplace... and install Palladio 3.5.
    * Select Help -> Install New Software... and install Gast model  feature from the [http://sissy.sourceforge.net/SISSy_Nightly update site].
    * Select Help -> Install New Software... and install SAMM feature from the [http://q-impress.ow2.org/updateSite update site].
-   * The last step is to import the necessary plugins from three projects: Story diagrams, Reclipsed, and Archimetrix. Follow the next section for this step.
+   * The last step is to import the necessary plugins from three projects: Story diagrams, Reclipse, and Archimetrix. Follow the next section for this step.
 
 == Workspace plug-ins ==
 
@@ -48,8 +48,8 @@ http://archimetrix.googlecode.com/svn/wiki/images/plugins/SDPlugins.png
 
 === Reclipse ===
 
-Reclipse can be obtained from [https://svn-serv.cs.upb.de/reclipse-emf/ this repository]. (You will need an account. When in doubt, you may get the source code from [https://archimetrix.googlecode.com/svn/branches/Reclipse/ here].)
-From Reclipse, only the plug-ins for the formalization, generation, and detection of structural patterns are necessary.
+Reclipse is an independent project located in [https://code.google.com/p/reclipse-emf/ Reclipse-emf] GoogleCode project.
+From Reclipse, only the plug-ins for the formalization, generation, and detection of structural patterns are necessary. Take note that the required plugins are located in branches and trunk folders. 
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/ReclipsePlugins.png
 
