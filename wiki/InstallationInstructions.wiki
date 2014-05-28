@@ -48,8 +48,8 @@ http://archimetrix.googlecode.com/svn/wiki/images/plugins/SDPlugins.png
 
 === Reclipse ===
 
-Reclipse is an independent project located in [https://code.google.com/p/reclipse-emf/ Reclipse-emf] GoogleCode project.
-From Reclipse, only the plug-ins for the formalization, generation, and detection of structural patterns are necessary. Take note that the required plugins are located in branches and trunk folders. 
+Reclipse is an independent project located in [https://code.google.com/p/reclipse-emf/ Reclipse-emf] Google code project.
+From Reclipse, only the plugins for the formalization, generation, and detection of structural patterns are necessary. Take note that the required plugins are located in branches and trunk folders. 
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/ReclipsePlugins.png
 
