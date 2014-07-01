@@ -9,7 +9,7 @@ There are two ways to obtain a copy of Archimetrix: Either you install a bundled
 If you only want to try out Archimetrix without actively developing it, there is an Eclipse feature of Archimetrix available for easy installation. Before you install the Archimetrix feature, you need to install few more more steps, as follows
   
    * Download and install the [http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/keplerr Eclipse Modeling Tools (Kepler)] by choosing your target OS on the right side download links section.
-   * Select Help -> Install New Software... and from the category Modelling under Eclipse Kepler update site install Xtext, Xpand, Modisco SDK, and QVT Operational SDK. 
+   * Select Help -> Install New Software... and from the category Modelling under Eclipse Kepler update site install Xtext, Xpand, !MoSisco SDK, and QVT Operational SDK. 
    * Download the Medini plugins (just the plugins!!) from [http://projects.ikv.de/qvt/downloads medini website] and put them in the plugins folder of your Eclipse.
    * Select Help -> Eclipse Marketplace... and install Palladio 3.5.
    * Select Help -> Install New Software... and install Gast model  feature from the [http://sissy.sourceforge.net/SISSy_Nightly update site].
@@ -18,14 +18,14 @@ If you only want to try out Archimetrix without actively developing it, there is
 
    * After restarting your Eclipse, you can choose the Archimetrix perspective and the Archimetrix menu will show up. New users may follow the [https://code.google.com/p/archimetrix/wiki/UserGuide User guide] to learn more about the features of Archimetrix.
 
-   * Remark: Depending on the size of your project, you may face memory issues which you can solve by changing the memory allocated for your Eclipe. We use the following VM arguments for our Eclipse: -Xmx1024m -XX:MaxPermSize=512m.
+   * Remark: Depending on the size of your project, you may face memory issues which you can solve by changing the memory allocated for your Eclipe. We use the following VM arguments for our Eclipse: -Xmx1024m -XX:!MaxPermSize=512m.
 
 = Developer Installation =
 
 In order to set up the Eclipse Kepler environment to develop Archimetrix, you need to execute the following steps 
 
    * Download and install the [http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/keplerr Eclipse Modeling Tools (Kepler)] by choosing the your target OS on the right side download links section.
-   * Select Help -> Install New Software... and from the category Modelling under Eclipse Kepler update site install Xtext, Xpand, Modisco SDK, and QVT Operational SDK.
+   * Select Help -> Install New Software... and from the category Modelling under Eclipse Kepler update site install Xtext, Xpand, !MoDisco SDK, and QVT Operational SDK.
    * Import all plugins of SoMoX from the trunk folder of [https://svnserver.informatik.kit.edu/i43/svn/code/SoMoX/Core/trunk/ SoMoX repository] (anonymous, anonymous).
    * Download the Medini plugins (just the plugins!!) from [http://projects.ikv.de/qvt/downloads medini website] and put them in the plugins folder of your Eclipse.
    * Import all plugins of the Palladio Workflow Engine from [https://svnserver.informatik.kit.edu/i43/svn/code/WorkflowEngine/trunk/ here].
@@ -61,4 +61,4 @@ http://archimetrix.googlecode.com/svn/wiki/images/plugins/ArchimetrixPlugins.png
 
 === Run Archimetrix ===
 
-Now, you can run Archimetrix as an Eclipse application by creating a new Eclipse instance in the Run configurations. We recommend the following VM arguments: -Dosgi.requiredJavaVersion=1.5 -Dhelp.lucene.tokenizer=standard -Xmx1024m -XX:MaxPermSize =512m. 
+Now, you can run Archimetrix as an Eclipse application by creating a new Eclipse instance in the Run configurations. We recommend the following VM arguments: -Dosgi.requiredJavaVersion=1.5 -Dhelp.lucene.tokenizer=standard -Xmx1024m -XX:!MaxPermSize=512m. 
