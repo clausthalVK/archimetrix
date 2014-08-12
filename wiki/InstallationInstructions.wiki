@@ -22,43 +22,25 @@ If you only want to try out Archimetrix without actively developing it, there is
 
 = Developer Installation =
 
-In order to set up the Eclipse Kepler environment to develop Archimetrix, you need to execute the following steps 
+In order to set up Eclipse Luna environment to develop Archimetrix, you need to execute the following steps 
 
-   * Download and install the [http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/keplerr Eclipse Modeling Tools (Kepler)] by choosing the your target OS on the right side download links section.
-   * Select Help -> Install New Software... and from the category Modelling under Eclipse Kepler update site install Xtext SDK, Xpand SDK, !MoDisco SDK, and QVT Operational SDK.
-   * Import all plugins of SoMoX from the trunk folder of [https://svnserver.informatik.kit.edu/i43/svn/code/SoMoX/Core/trunk/ SoMoX repository] (anonymous, anonymous).
-   * Download the Medini plugins (just the plugins!!) from [http://projects.ikv.de/qvt/downloads medini website] and put them in the plugins folder of your Eclipse.
-   * Import all plugins of the Palladio Workflow Engine from [https://svnserver.informatik.kit.edu/i43/svn/code/WorkflowEngine/trunk/ here].
-   * Select Help -> Eclipse Marketplace... and install Palladio 3.5.
-   * Select Help -> Install New Software... and install Gast model  feature from the [http://sissy.sourceforge.net/SISSy_Nightly update site].
-   * Select Help -> Install New Software... and install SAMM feature from the [http://q-impress.ow2.org/updateSite update site].
-   * The last step is to import the necessary plugins from three projects: Story diagrams, Reclipse, and Archimetrix. Follow the next section for this step.
-
-== Workspace plug-ins ==
-
-You need plug-ins from three projects: The story diagrams metamodel and interpreter, Reclipse, and Archimetrix itself.
-
-=== Story diagrams ===
-
-The plug-ins for the story diagram metamodel and interpreter can be found [https://svn.codespot.com/a/eclipselabs.org/sdm-commons/ in this repository]. Contact one of the project owners if you need write access.
-
-From the story diagrams repository, you need the following plug-ins:
+   * (1) Download and install the [https://www.eclipse.org/downloads/index-developer.php Eclipse Modeling Tools (Luna)] by choosing the your target OS.
+   * (2) Select Help -> Install New Software... and from the category Modelling under Eclipse Luna update site install Xtext SDK, Xpand SDK, !MoDisco SDK, and QVT Operational SDK.
+   * (3) Select Help -> Eclipse Marketplace... and install Palladio 3.5.
+   * (4) Import all plugins of SoMoX from the trunk folder of [https://svnserver.informatik.kit.edu/i43/svn/code/SoMoX/Core/trunk/ SoMoX repository] (anonymous, anonymous). Alternatively, you may install !SoMoX from the nightly build [https://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ site].
+   * (5) Import the required plugins (see figure bellow) from [https://svn.codespot.com/a/eclipselabs.org/sdm-commons/ Story diagrams repository]. Alternatively, you may install Story diagrams from the nightly build [https://sdqweb.ipd.kit.edu/eclipse/storydiagraminterpreter/nightly/ site].
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/SDPlugins.png
 
-=== Reclipse ===
-
-Reclipse is an independent project located in [https://code.google.com/p/reclipse-emf/ Reclipse-emf] Google code project.
-From Reclipse, only the plugins for the formalization, generation, and detection of structural patterns are necessary. Take note that the required plugins are located in branches and trunk folders. 
+  * (6) Import the required plugins (see figure bellow) from 
+[https://reclipse-emf.googlecode.com/svn/trunk/ Reclipse repository]. Alternatively, you may install Reclipse following the installation instructions from [https://code.google.com/p/reclipse-emf/ Reclipse project page].
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/ReclipsePlugins.png
 
-=== Archimetrix ===
-
-Archimetrix is available in the repository belonging to [https://archimetrix.googlecode.com/svn/branches/ArchimetrixForKepler/ this project]. You will need the following plug-ins:
+  * (7) Finally, import the plugins from [https://archimetrix.googlecode.com/svn/branches/ArchimetrixForKepler/ Archimetrix repository].
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/ArchimetrixPlugins.png
 
 === Run Archimetrix ===
 
-Now, you can run Archimetrix as an Eclipse application by creating a new Eclipse instance in the Run configurations. We recommend the following VM arguments: -Dosgi.requiredJavaVersion=1.5 -Dhelp.lucene.tokenizer=standard -Xmx1024m -XX:!MaxPermSize=512m. 
+Now, you can run Archimetrix as an Eclipse application by creating a new Eclipse instance in the Run configurations. We recommend the following VM arguments: -Xmx1024m -XX:!MaxPermSize=512m. 
