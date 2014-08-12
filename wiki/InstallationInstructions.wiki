@@ -27,7 +27,7 @@ In order to set up Eclipse Luna environment to develop Archimetrix, you need to 
    * (1) Download and install the [https://www.eclipse.org/downloads/index-developer.php Eclipse Modeling Tools (Luna)] by choosing the your target OS.
    * (2) Select Help -> Install New Software... and from the category Modelling under Eclipse Luna update site install Xtext SDK, Xpand SDK, !MoDisco SDK, and QVT Operational SDK.
    * (3) Select Help -> Eclipse Marketplace... and install Palladio 3.5.
-   * (4) Import all plugins of SoMoX from the trunk folder of [https://svnserver.informatik.kit.edu/i43/svn/code/SoMoX/Core/trunk/ SoMoX repository] (anonymous, anonymous). Alternatively, you may install !SoMoX from the nightly build [https://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ site].
+   * (4) Import all plugins of SoMoX from the trunk folder of [https://svnserver.informatik.kit.edu/i43/svn/code/SoMoX/Core/trunk/ SoMoX repository] (anonymous, anonymous). Alternatively, you may install SoMoX from the nightly build [https://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ site].
    * (5) Import the required plugins (see figure bellow) from [https://svn.codespot.com/a/eclipselabs.org/sdm-commons/ Story diagrams repository]. Alternatively, you may install Story diagrams from the nightly build [https://sdqweb.ipd.kit.edu/eclipse/storydiagraminterpreter/nightly/ site].
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/SDPlugins.png
