@@ -9,11 +9,11 @@ There are two ways to obtain a copy of Archimetrix: Either you install a bundled
 If you only want to try out Archimetrix without actively developing it, there is an Eclipse feature of Archimetrix available for easy installation. Before you install the Archimetrix feature, you need to install few more more steps, as follows
   
    * (1) Download and install the [https://www.eclipse.org/downloads/index-developer.php Eclipse Modeling Tools (Luna)] by choosing the your target OS.
-   * (2) Select Help -> Install New Software... and from the category Modelling under Eclipse Luna update site install Xtext SDK, Xpand SDK, !MoDisco SDK, and QVT Operational SDK.
-   * (3) Select Help -> Eclipse Marketplace... and install Palladio 3.5.
-   * (4) Import all plugins of SoMoX from the trunk folder of [https://svnserver.informatik.kit.edu/i43/svn/code/SoMoX/Core/trunk/ SoMoX repository] (anonymous, anonymous). Alternatively, you may install SoMoX from the nightly build [https://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ site].
+   * (2) Select Help -> Install New Software... and from the category Modelling under Eclipse Luna update site install !MoDisco SDK and QVT Operational SDK.
+   * (3) Select Help -> Install New Software... and install Palladio from the nightly build [https://sdqweb.ipd.kit.edu/eclipse/palladio/nightly/ site].
+   * (4) Select Help -> Install New Software... and install SoMoX from the nightly build [https://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ site].
   * (5) Select Help -> Install New Software... and install Reclipse from the [https://reclipse-emf.googlecode.com/svn/trunk/org.reclipse.updatesite/ updatesite].
-  * (6) Select Help -> Install New Software... and Archimetrix from our [https://archimetrix.googlecode.com/svn/branches/ArchimetrixForKepler/org.archimetrix.updatesite/ update site].
+  * (6) Select Help -> Install New Software... and install Archimetrix from our [https://archimetrix.googlecode.com/svn/branches/ArchimetrixForKepler/org.archimetrix.updatesite/ update site].
 
 
 === Run Archimetrix ===
