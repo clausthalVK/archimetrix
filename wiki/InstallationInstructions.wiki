@@ -25,19 +25,19 @@ Now, you can run Archimetrix as an Eclipse application by creating a new Eclipse
 In order to set up Eclipse Luna environment to develop Archimetrix, you need to execute the following steps 
 
    * (1) Download and install the [https://www.eclipse.org/downloads/index-developer.php Eclipse Modeling Tools (Luna)] by choosing the your target OS.
-   * (2) Select Help -> Install New Software... and from the category Modelling under Eclipse Luna update site install Xtext SDK, Xpand SDK, !MoDisco SDK, and QVT Operational SDK.
-   * (3) Select Help -> Eclipse Marketplace... and install Palladio 3.5.
-   * (4) Import all plugins of SoMoX from the trunk folder of [https://svnserver.informatik.kit.edu/i43/svn/code/SoMoX/Core/trunk/ SoMoX repository] (anonymous, anonymous). Alternatively, you may install SoMoX from the nightly build [https://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ site].
-   * (5) Import the required plugins (see figure bellow) from [https://svn.codespot.com/a/eclipselabs.org/sdm-commons/ Story diagrams repository]. Alternatively, you may install Story diagrams from the nightly build [https://sdqweb.ipd.kit.edu/eclipse/storydiagraminterpreter/nightly/ site].
+   * (2) Select Help -> Install New Software... and from the category Modelling under Eclipse Luna update site install !MoDisco SDK, and QVT Operational SDK.
+   * (3) Select Help -> Install New Software... and install Palladio from the nightly build [https://sdqweb.ipd.kit.edu/eclipse/palladio/nightly/ site].
+   * (4) Check out all projects of SoMoX from the trunk folder of [https://svnserver.informatik.kit.edu/i43/svn/code/SoMoX/Core/trunk/ SoMoX repository] (anonymous, anonymous). Alternatively, you may install SoMoX from the nightly build [https://sdqweb.ipd.kit.edu/eclipse/somox/nightly/ site].
+   * (5) Check out the required projects (see figure bellow) from [https://svn.codespot.com/a/eclipselabs.org/sdm-commons/ Story diagrams repository]. Alternatively, you may install Story diagrams from the nightly build [https://sdqweb.ipd.kit.edu/eclipse/storydiagraminterpreter/nightly/ site].
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/SDPlugins.png
 
-  * (6) Import the required plugins (see figure bellow) from 
+  * (6) Check out the required projects (see figure bellow) from 
 [https://reclipse-emf.googlecode.com/svn/trunk/ Reclipse repository]. Alternatively, you may install Reclipse following the installation instructions from [https://code.google.com/p/reclipse-emf/ Reclipse project page].
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/ReclipsePlugins.png
 
-  * (7) Finally, import the plugins from [https://archimetrix.googlecode.com/svn/branches/ArchimetrixForKepler/ Archimetrix repository].
+  * (7) Finally, check out the projects from [https://archimetrix.googlecode.com/svn/branches/ArchimetrixForKepler/ Archimetrix repository].
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/ArchimetrixPlugins.png
 
