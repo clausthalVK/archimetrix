@@ -41,6 +41,8 @@ http://archimetrix.googlecode.com/svn/wiki/images/plugins/ReclipsePlugins.png
 
 http://archimetrix.googlecode.com/svn/wiki/images/plugins/ArchimetrixPlugins.png
 
+  * Remark: When you want to want to work with GAST metamodel you need to first install it. Select Help -> Install New Software... and install Gast model  feature from the [http://sissy.sourceforge.net/SISSy_Nightly update site].
+
 === Run Archimetrix ===
 
 Now, you can run Archimetrix as an Eclipse application by creating a new Eclipse instance in the Run configurations. We recommend the following VM arguments: -Xmx1024m -XX:!MaxPermSize=512m. 
